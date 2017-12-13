@@ -7,7 +7,7 @@
     #import "UIScrollView+MJRefreshEX.h"
 
 ### 2.添加代理
-    #MJRefreshEXDelegate
+    <MJRefreshEXDelegate>
 
 ### 3.添加刷新
     [self.tableView addHeaderWithHeaderClass:nil beginRefresh:YES delegate:self animation:YES];
