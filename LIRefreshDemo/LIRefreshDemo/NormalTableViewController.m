@@ -28,7 +28,7 @@
 
 }
 
-#pragma mark - SKRefreshDelegate
+#pragma mark - MJRefreshEXDelegate
 - (void)onRefreshing:(id)control {
     [self requestNetWorkingWithPageNum:1 isHeader:YES];
 }
