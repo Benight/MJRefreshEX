@@ -4,16 +4,15 @@
 
 # 使用方法
 * 1.引用头文件
- * #import "UIScrollView+MJRefreshEX.h"
+  #import "UIScrollView+MJRefreshEX.h"
 
 * 2.添加代理
- * #MJRefreshEXDelegate
+  #MJRefreshEXDelegate
 
 * 3.添加刷新
- * [self.tableView addHeaderWithHeaderClass:nil beginRefresh:YES delegate:self animation:YES];
- * [self.tableView addFooterWithFooterClass:nil automaticallyRefresh:YES delegate:self];
+  [self.tableView addHeaderWithHeaderClass:nil beginRefresh:YES delegate:self animation:YES];
+  [self.tableView addFooterWithFooterClass:nil automaticallyRefresh:YES delegate:self];
 
 * 4.添加监听
-- (void)onRefreshing:(id)control {}
-
-- (void)onLoadingMoreData:(id)control pageNum:(NSNumber *)pageNum {}
+  - (void)onRefreshing:(id)control {}
+  - (void)onLoadingMoreData:(id)control pageNum:(NSNumber *)pageNum {}
