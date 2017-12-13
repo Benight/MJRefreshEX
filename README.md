@@ -2,7 +2,7 @@
 为了方便使用巨人的轮子，稍微封装了下MJRefresh，两句代码就可以完成刷新，也可以自定义刷新头，并且把页数控制封装了起来，自己就不用记录页数了
 
 # 示例
-![gif](https://github.com/Benight/MJRefreshEX/refreshGIF.gif)
+![gif](https://github.com/Benight/MJRefreshEX/blob/master/refreshGIF.gif)
 
 
 ## 使用方法
