@@ -3,16 +3,16 @@
 
 
 # 使用方法
-* 1.引用头文件
-  #import "UIScrollView+MJRefreshEX.h"
+## 1.引用头文件<br>
+    #import "UIScrollView+MJRefreshEX.h"
 
-* 2.添加代理
-  #MJRefreshEXDelegate
+## 2.添加代理<br>
+   #MJRefreshEXDelegate
 
-* 3.添加刷新
-  [self.tableView addHeaderWithHeaderClass:nil beginRefresh:YES delegate:self animation:YES];
-  [self.tableView addFooterWithFooterClass:nil automaticallyRefresh:YES delegate:self];
+## 3.添加刷新<br>
+    [self.tableView addHeaderWithHeaderClass:nil beginRefresh:YES delegate:self animation:YES];<br>
+    [self.tableView addFooterWithFooterClass:nil automaticallyRefresh:YES delegate:self];
 
-* 4.添加监听
-  - (void)onRefreshing:(id)control {}
-  - (void)onLoadingMoreData:(id)control pageNum:(NSNumber *)pageNum {}
+## 4.添加监听<br>
+    - (void)onRefreshing:(id)control {}<br>
+    - (void)onLoadingMoreData:(id)control pageNum:(NSNumber *)pageNum {}
