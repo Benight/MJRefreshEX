@@ -3,24 +3,17 @@
 
 
 # 使用方法
-1.引用头文件
+* 1.引用头文件
+ * #import "UIScrollView+MJRefreshEX.h"
 
-#import "UIScrollView+MJRefreshEX.h"
+* 2.添加代理
+ * #MJRefreshEXDelegate
 
-2.添加代理
+* 3.添加刷新
+ * [self.tableView addHeaderWithHeaderClass:nil beginRefresh:YES delegate:self animation:YES];
+ * [self.tableView addFooterWithFooterClass:nil automaticallyRefresh:YES delegate:self];
 
-MJRefreshEXDelegate
+* 4.添加监听
+- (void)onRefreshing:(id)control {}
 
-3.添加刷新
-
-[self.tableView addHeaderWithHeaderClass:nil beginRefresh:YES delegate:self animation:YES];
-[self.tableView addFooterWithFooterClass:nil automaticallyRefresh:YES delegate:self];
-
-4.添加监听
-
-#pragma mark - SKRefreshDelegate
-- (void)onRefreshing:(id)control {
-}
-
-- (void)onLoadingMoreData:(id)control pageNum:(NSNumber *)pageNum {
-}
+- (void)onLoadingMoreData:(id)control pageNum:(NSNumber *)pageNum {}
